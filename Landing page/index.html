@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Landing Page</title>
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="./img/logo.jpg" class="logo"></a>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Menu</a></li>
+                <li><a href="">What's New</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </header>
+            <div class="content">
+                <div class="textBox">
+                    <h2>We're here for <br><span>Simply Great Coffee</span></h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam illum praesentium possimus natus quas optio unde, quisquam culpa! Dolorem repudiandae exercitationem itaque dolor quaerat temporibus laudantium suscipit quidem, debitis sit! Enim repellendus ab consequuntur alias mollitia dolorem sit debitis fugit nisi maiores omnis fugiat, quasi, laboriosam explicabo. Labore, adipisci facere. Tempore quia consequuntur corporis qui!</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="imgBox">
+                    <img src="./img/img1.png" class="sleepyowl">
+                </div>
+            </div>
+            <div>
+
+                <ul class="thumb">
+                    <li><a href="#"><img src="./img/thumb1.avif" onclick="imgSlider('./img/img1.png'); changeCircleColor(' rgb(122 94 197)')"></a></li>
+                    <li><a href="#"><img src="./img/thumb2.avif" onclick="imgSlider('./img/img2.png'); changeCircleColor('rgb(160 222 250)')"></a></li>
+                    <li><a href="#"><img src="./img/thumb3.avif" onclick="imgSlider('./img/img3.png'); changeCircleColor('rgb(249 123 81)')"></a></li>
+                </ul>
+
+            </div>
+    </section>
+
+<script type="text/javascript">
+    function imgSlider(anything){
+        document.querySelector('.sleepyowl').src = anything;
+    }
+    function changeCircleColor(color){
+         const circle = document.querySelector('.circle');
+         circle.style.background = color;
+    }
+</script>
+
+</body>
+</html>
